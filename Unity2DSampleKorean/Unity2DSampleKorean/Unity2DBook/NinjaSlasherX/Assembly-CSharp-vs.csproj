@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{26BE5DD3-B51E-BD36-44EE-D300E12D2AED}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AppSound.cs" />
+     <Compile Include="Assets\Scripts\ApplicationStartup.cs" />
+     <Compile Include="Assets\Scripts\BaseCharacterController.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\CombatAI.cs" />
+     <Compile Include="Assets\Scripts\Effect_FadeObject.cs" />
+     <Compile Include="Assets\Scripts\Effect_ParticleChrDir.cs" />
+     <Compile Include="Assets\Scripts\EnemyBodyCollider.cs" />
+     <Compile Include="Assets\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\EnemyMain.cs" />
+     <Compile Include="Assets\Scripts\EnemyMain_A.cs" />
+     <Compile Include="Assets\Scripts\EnemyMain_B.cs" />
+     <Compile Include="Assets\Scripts\EnemyMain_C.cs" />
+     <Compile Include="Assets\Scripts\EnemyMain_D_Boss.cs" />
+     <Compile Include="Assets\Scripts\EnemySprite.cs" />
+     <Compile Include="Assets\Scripts\FireBullet.cs" />
+     <Compile Include="Assets\Scripts\Menu\MenuObject_Button.cs" />
+     <Compile Include="Assets\Scripts\Menu\MenuObject_Slidebar.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu_Debug.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu_Ending.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu_HiScore.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu_Logo.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu_Option.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu_Pause.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu_Title.cs" />
+     <Compile Include="Assets\Scripts\PlayerBodyCollider.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerMain.cs" />
+     <Compile Include="Assets\Scripts\SaveData.cs" />
+     <Compile Include="Assets\Scripts\StageA_Sun.cs" />
+     <Compile Include="Assets\Scripts\StageA_TimeEffect.cs" />
+     <Compile Include="Assets\Scripts\StageObject_BlockA.cs" />
+     <Compile Include="Assets\Scripts\StageObject_Damage.cs" />
+     <Compile Include="Assets\Scripts\StageObject_DestroySwitch.cs" />
+     <Compile Include="Assets\Scripts\StageObject_DogPile.cs" />
+     <Compile Include="Assets\Scripts\StageObject_Elevator.cs" />
+     <Compile Include="Assets\Scripts\StageObject_KeyDoor.cs" />
+     <Compile Include="Assets\Scripts\StageObject_MoveBlock.cs" />
+     <Compile Include="Assets\Scripts\StageObject_Switch.cs" />
+     <Compile Include="Assets\Scripts\StageTrigger_Camera.cs" />
+     <Compile Include="Assets\Scripts\StageTrigger_CheckPoint.cs" />
+     <Compile Include="Assets\Scripts\StageTrigger_EnabledSwitch.cs" />
+     <Compile Include="Assets\Scripts\StageTrigger_EventBrokenWorld.cs" />
+     <Compile Include="Assets\Scripts\StageTrigger_EventObject.cs" />
+     <Compile Include="Assets\Scripts\StageTrigger_EventSound.cs" />
+     <Compile Include="Assets\Scripts\StageTrigger_Link.cs" />
+     <Compile Include="Assets\Scripts\Stage_AfterImage.cs" />
+     <Compile Include="Assets\Scripts\Stage_CreateStaticShadowAll.cs" />
+     <Compile Include="Assets\Scripts\Stage_Shadow.cs" />
+     <Compile Include="Assets\Scripts\Unity2DSortingLayer.cs" />
+     <Compile Include="Assets\Scripts\zFoxDataPackString.cs" />
+     <Compile Include="Assets\Scripts\zFoxDebugFrameRate.cs" />
+     <Compile Include="Assets\Scripts\zFoxDontDestroyOnLoad.cs" />
+     <Compile Include="Assets\Scripts\zFoxFadeFilter.cs" />
+     <Compile Include="Assets\Scripts\zFoxGameObjectLoader.cs" />
+     <Compile Include="Assets\Scripts\zFoxScreenAdjust.cs" />
+     <Compile Include="Assets\Scripts\zFoxSoundManager.cs" />
+     <Compile Include="Assets\Scripts\zFoxTween.cs" />
+     <Compile Include="Assets\Scripts\zFoxUID.cs" />
+     <Compile Include="Assets\Scripts\zFoxVirtualPad.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
